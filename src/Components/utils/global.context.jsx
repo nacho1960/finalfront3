@@ -5,9 +5,11 @@ import axios from "axios";
 const localStorageFavs = JSON.parse(localStorage.getItem('favs'))
 export const initialState = { 
   dentistas: [],
-  favs :localStorageFavs === null ? [] : localStorageFavs ,
-  theme :
-}
+  favs: localStorageFavs === null ? [] : localStorageFavs,
+  theme:"light"
+ 
+ 
+};
 export const ContextGlobal = createContext();
 
 export const ContextProvider = ({ children }) => {
